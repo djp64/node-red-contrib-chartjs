@@ -141,7 +141,11 @@ module.exports = function (RED) {
         node.on('input', function (msg) {
             // publish chart input message
             var red = { msg: msg };
-
+            if (typeof red.msg.title!=='undefined')
+            {
+            	configs[config.path].title=red.msg.title;
+            	config.charttitle=red.msg.title;
+            }
             io.emit(config.path, red);
 
             // return payload
@@ -183,7 +187,11 @@ module.exports = function (RED) {
         node.on('input', function (msg) {
             // publish chart input message
             var red = { msg: msg };
-
+            if (typeof red.msg.title!=='undefined')
+            {
+            	configs[config.path].title=red.msg.title;
+            	config.charttitle=red.msg.title;
+            }
             io.emit(config.path, red);
 
             // return payload
@@ -267,7 +275,11 @@ module.exports = function (RED) {
         node.on('input', function (msg) {
             // publish chart input message
             var red = { msg: msg };
-
+            if (typeof red.msg.title!=='undefined')
+            {
+            	configs[config.path].title=red.msg.title;
+            	config.charttitle=red.msg.title;
+            }
             io.emit(config.path, red);
 
             // return payload
@@ -309,7 +321,11 @@ module.exports = function (RED) {
         node.on('input', function (msg) {
             // publish chart input message
             var red = { msg: msg };
-
+            if (typeof red.msg.title!=='undefined')
+            {
+            	configs[config.path].title=red.msg.title;
+            	config.charttitle=red.msg.title;
+            }
             io.emit(config.path, red);
 
             // return payload
@@ -351,7 +367,11 @@ module.exports = function (RED) {
         node.on('input', function (msg) {
             // publish chart input message
             var red = { msg: msg };
-
+            if (typeof red.msg.title!=='undefined')
+            {
+            	configs[config.path].title=red.msg.title;
+            	config.charttitle=red.msg.title;
+            }
             io.emit(config.path, red);
 
             // return payload
@@ -435,7 +455,11 @@ module.exports = function (RED) {
         node.on('input', function (msg) {
             // publish chart input message
             var red = { msg: msg };
-
+            if (typeof red.msg.title!=='undefined')
+            {
+            	configs[config.path].title=red.msg.title;
+            	config.charttitle=red.msg.title;
+            }
             io.emit(config.path, red);
 
             // return payload
